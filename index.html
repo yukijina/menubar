@@ -9,6 +9,9 @@
 		<title></title>
 		<!-- GOOGLE FONT -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+		<!-- ANIMATED CSS -->
+		<link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<!-- FONTAWESOME -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 		<!-- BOOTSTRAP CSS -->
@@ -19,40 +22,56 @@
 	<body>
 		<!-- header -->
 		<header id="nav">
-			<div id="menuBar" class="mx-5">
-			 <div class="bar1"></div>
-			 <div class="bar2"></div>
-			 <div class="bar3"></div>
+			<div class="mx-5">
+			 <p id="menuBtn" class="menuOpen">menu</p>
 			</div>
-			<h1 class="text-center pt-4">Creative navigation menu</h1>
-		</header>
+		  <div id="menu" class="menuCollapsed d-flex">
+				<ul class="align-self-center mx-auto">
+					<li class="hidden"><a href="#">HOME</a></li>
+					<li class="hidden"><a href="#">ABOUT</a></li>
+					<li class="hidden"><a href="#">SERVICE</a></li>
+					<li class="hidden"><a href="#">WORK</a></li>
+					<li class="hidden"><a href="#">CONTACT</a></li>
+				</ul>
+		  </div>
+			<h1 class="text-center pt-5">Creative navigation menu</h1>
+  	</header>
 
 		<!-- Main ody left side -->
 		<div class="container">
-			<div class="row">
-
-					<div class="card col-4" style="width: 16rem;">
+			<div class="row cardDiv mx-auto">
+					<div class="card col-4 px-0 mx-auto" style="max-width: 16rem;">
 					  <img class="card-img-top" src="img/menu1.jpg" alt="Card image cap">
 					  <div class="card-body">
 					    <h5 class="card-title">Animated Menu</h5>
-					    <p class="card-text">Excellent JQuery navigation. Smooth animated menu</p>
-					    <a href="http://buildinternet.com/2009/01/how-to-make-a-smooth-animated-menu-with-jquery/" class="btn btn-primary">More</a>
+					    <p class="card-text">Excellent JQuery navigation and smooth animated menu.</p>
+					    <a href="http://buildinternet.com/2009/01/how-to-make-a-smooth-animated-menu-with-jquery/" class="btn btn-dark">More</a>
 					  </div>
 					</div>
 
-					<div class="card col-4" style="width: 16rem;">
+					<div class="card col-4 px-0 mx-auto" style="max-width: 16rem;">
 					  <img class="card-img-top" src="img/menu2.jpg" alt="Card image cap">
 					  <div class="card-body">
 					    <h5 class="card-title">Minimalstic Menu</h5>
-					    <p class="card-text">Awesome menu creation using CSS and jquery in which the menu background is transparent</p>
-					    <a href="https://codepen.io/rluque/full/CgptI" class="btn btn-primary">More</a>
+					    <p class="card-text">Awesome menu creation using CSS and jquery. Menu background is transparent</p>
+					    <a href="https://codepen.io/rluque/full/CgptI" class="btn btn-dark">More</a>
 					  </div>
 					</div>
 
+					<div class="card col-4 px-0 mx-auto" style="max-width: 16rem;">
+						<img class="card-img-top" src="img/menu3.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Nav &  Doc</h5>
+							<p class="card-text">This resource contains two types of stylish menu designs.</p>
+							<a href="http://dipi-graphics.com/labs/6/NavDock-jQuery-Plugin.html" class="btn btn-dark">More</a>
+						</div>
+			  	</div>
+				</div>
+			</div>
 
 
 			<!-- Main body right side -->
-				<div class="col-4">
+				<div class="">
 					<div class="">
 						<a href="#">some link</a>
 					</div>
@@ -66,29 +85,7 @@
 						<a href="#">some link</a>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="card col-4" style="width: 16rem;">
-					<img class="card-img-top" src="img/menu3.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">More menu bar</h5>
-						<p class="card-text">A mobile-friendly horizontal navigation menu that automatically clips overflowing menu items and adds them into a dropdown list when not enough space is available.</p>
-						<a href="https://www.jqueryscript.net/menu/Responsive-Horizontal-Nav-Menu-with-jQuery-CSS.html" class="btn btn-primary">More</a>
-					</div>
-				</div>
-
-				<div class="card col-4" style="width: 16rem;">
-					<img class="card-img-top" src="img/menu4.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Nav Doc</h5>
-						<p class="card-text">This resource contains two types of stylish menu designs. Smooth Ajax adds the spark, blue is the color, rest is history.</p>
-						<a href="http://dipi-graphics.com/labs/6/NavDock-jQuery-Plugin.html" class="btn btn-primary">More</a>
-					</div>
-				</div>
-
-			</div>
-    </div>
 
 		<footer>
 			<p>some footer here</p>

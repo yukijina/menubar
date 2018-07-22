@@ -6,34 +6,77 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #F4F5F6;
 }
 
 #nav {
   margin-top: 3%;
   margin-bottom: 8%;
-
 }
-
-#menuBar {
-  display: inline-block;
-  cursor: pointer;
-  position: fixed;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
 
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.45rem;
+}
+
+
+#menuBtn {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  border: 2.3px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  top: 20px;
+  left: 30px;
+  z-index: 999;
+  font-size: 1.2rem
+}
+
+#menuBtn.menuOpen {
+  color: #333;
+  border: 2px solid #333;
+}
+
+#menu {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(125deg, #F6B196,#F5B0AB, #E99CA5,#DF94A1, #B75A75);
+  transform-origin: left;
+  transition: 0.8s ease;
+  }
+
+#menu.menuCollapsed {
+  width: 0;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#menu li {
+ padding: 8% 0;
+}
+
+#menu a {
+ color: #fff;
+ text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.cardDiv {
+  width: 90%;
+}
+.cardDiv card {
+
 }
