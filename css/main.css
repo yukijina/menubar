@@ -9,6 +9,13 @@ body {
   background-color: #F4F5F6;
 }
 
+/***********************
+1) Header
+2) Card Section
+3) Link Section
+/***********************
+
+/* Header menu-jQuery */
 #nav {
   margin-top: 3%;
   margin-bottom: 8%;
@@ -20,7 +27,6 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.45rem;
 }
-
 
 #menuBtn {
   display: inline-block;
@@ -74,9 +80,51 @@ h1 {
   display: none;
 }
 
+/* Card Section */
+#cardSec {
+  background-color: #A8D0E6;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
 .cardDiv {
   width: 90%;
-}
-.cardDiv card {
 
+}
+.cardDiv .card {
+ max-height: 25rem;
+}
+
+/* Link Section */
+#linkSec {
+  background-color: #F76C6C;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+#linkSec h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#linkSec a {
+  text-decoration: none;
+  color: #F76C6C;
+  font-weight: 700;
+}
+.cool-link {
+  background-color:  #F8E9A1;
+  text-align: center;
+  margin: 2rem 0.2rem;
+  padding: 2.5%;
+  border-radius: 5px;
+}
+
+/* responsive media query */
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #linkSec h2 {
+    font-size: 1.5rem;
+  }
 }
